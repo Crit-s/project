@@ -278,6 +278,12 @@
   transform: scale(1.2);
 }
 
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .page-features {
   display: flex;
   justify-content: center;
@@ -333,6 +339,105 @@
 }
 .features:nth-child(4) {
   margin: 0;
+}
+
+.Waxom-is-heading {
+  text-align: center;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  padding: 83px 0 0 0;
+  margin: 0;
+}
+.Waxom-is-txt {
+  text-align: center;
+  width: 757px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+  word-break: break-all;
+  margin: 24px auto 40px;
+}
+.Waxom-is-wrap {
+  position: relative;
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.Waxom-is-wrap-img:nth-child(1) {
+  position: absolute;
+  z-index: 1;
+  top: 82px;
+  left: 11px;
+}
+.Waxom-is-wrap-img:nth-child(2) {
+  margin: 0 auto;
+  z-index: 2;
+}
+.Waxom-is-wrap-img:nth-child(3) {
+  position: absolute;
+  z-index: 1;
+  top: 82px;
+  left: 470px;
+}
+
+.advertising {
+  width: 1920px;
+  box-sizing: border-box;
+  height: 150px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advertising-info {
+  margin: 0 470px 0 0;
+}
+.advertising-info-heading {
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 8px 0;
+  color: #fff;
+}
+.advertising-info-heading-span {
+  color: #c7b299;
+}
+.advertising-info-txt {
+  color: #615855;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+  color: #615855;
+}
+.advertising-button {
+  width: 170px;
+  min-height: 50px;
+  background-color: #998675;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 19px 28px;
+  border: none;
+}
+.advertising-button-span {
+  color: #fff;
+  font-family: "Raleway - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  word-break: break-all;
 }
 
 /*# sourceMappingURL=style.css.map */
