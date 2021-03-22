@@ -291,7 +291,7 @@ $width-site: 1920px;
 .page-features {
     display: flex;
     justify-content: center;
-    padding: 90px 0 0 0;
+    padding: 90px 0 80px 0;
 }
 .features {
     width: 267px;
@@ -338,5 +338,8 @@ $width-site: 1920px;
     }
     &:hover::after {
        background-color: #c7b299;
+    }
+    &:nth-child(4) {
+        margin: 0;
     }
 }
