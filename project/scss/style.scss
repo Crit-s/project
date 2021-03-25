@@ -3,20 +3,24 @@
 //     padding: 0;
 // }
 @font-face {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype"); 
 }
 @font-face {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     src: url(../fonts/raleway/Raleway-Regular.ttf) format("truetype");
 }
 @font-face {
-    font-family: "Raleway - Extra Bold";
+    font-family: 'Raleway - Extra Bold';
     src: url(../fonts/raleway/Raleway-ExtraBold.ttf) format("truetype");
 }
 @font-face {
-    font-family: "Raleway - Semi Bold";
+    font-family: 'Raleway - Semi Bold';
     src: url(../fonts/raleway/Raleway-SemiBold.ttf)format("truetype");
+}
+@font-face{
+    font-family: 'Montserrat - Ultra Light';
+    src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");
 }
 
 $width-site: 1920px;
@@ -749,12 +753,60 @@ $width-site: 1920px;
                width: 21px;
                height: 21px;
                background-image: url(../img/img-atticle-list.svg);
-               background-size: contain;
+               background-size: cover;
                position: absolute;
                top: 4px;
                left: -40px;
            }
            
        }
+    }
+}
+.statistics {
+    min-height: 300px;
+    box-sizing: border-box;
+    background-color:#f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    padding: 69px 496px 60px 504px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+        width: 132px;
+        box-sizing: border-box;
+        &-icon{
+            display: block;
+            fill: #c7b299;
+            margin: 0 auto 30px;
+        }
+        &-number{
+            display: block;
+            color: #fff;
+            font-family: 'Montserrat - Ultra Light';
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        &-note{
+            display: block;
+            color: #c7b299;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 30px 0;
+            word-break: break-all;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
     }
 }
