@@ -90,6 +90,7 @@
 }
 
 .form {
+  position: relative;
   margin: 0 0 0 60px;
   display: flex;
 }
@@ -106,21 +107,39 @@
 .form-search {
   width: 24px;
   height: 24px;
-  outline: none;
-  background-image: url(../img/icon-search.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  border: none;
   background-color: transparent;
   display: block;
   margin: 0 0 0 28px;
-  color: #fff;
 }
-.form-search:focus {
-  width: 300px;
+.form-search-svg {
+  fill: #fff;
+}
+.form-search-svg:hover {
+  fill: #c7b299;
+}
+.form-search-svg:active {
+  fill: #fff;
+}
+.form-input {
+  width: 0;
+  min-height: 0;
+  position: absolute;
+  outline: none;
+  box-sizing: border-box;
+  top: 45px;
+  left: -130px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+.form-input:focus {
+  width: 200px;
+  min-height: 20px;
   transition: width 1s ease-out;
-  background-position: right;
-  border: 1px solid #998675;
+  border: 1px solid #fff;
 }
 
 .header-content-wrp {
@@ -517,7 +536,6 @@
 .latest-projects-item-list-btn:active {
   background-color: #fff;
   color: #8c8c8c;
-  border: none;
 }
 .latest-projects-button {
   width: 170px;
@@ -985,6 +1003,29 @@
 }
 .logo-item:active {
   filter: brightness(100%);
+}
+
+.footer {
+  max-width: 1920px;
+  background-color: #191919;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 0;
+}
+.footer-top {
+  min-height: 508px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top-item {
+  width: 270px;
+  min-height: 260px;
+  border: 2px solid #fff;
+  margin: 0 35px 0 0;
+}
+.footer-top-item:last-child {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

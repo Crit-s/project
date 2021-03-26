@@ -98,9 +98,9 @@ $width-site: 1920px;
     }
 }
 .form {
+    position: relative;
     margin: 0 0 0 60px;
     display: flex;
-
     &-link{
      text-decoration: none;
      fill: #fff;
@@ -114,22 +114,40 @@ $width-site: 1920px;
     &-search {
        width: 24px;
        height: 24px;
-       outline: none;
-       background-image: url(../img/icon-search.svg);
-       background-size: contain;
+       background-size: cover;
        background-repeat: no-repeat;
-       border: none;
        background-color: transparent;
        display: block;
        margin: 0 0 0 28px;
-       color: #fff;
-       &:focus {
-         width: 300px;
-         transition: width 1s ease-out;
-         background-position: right;
-         border: 1px solid #998675;
-       } 
+       &-svg{
+        fill: #fff;
+        &:hover{
+            fill: #c7b299;
+        }
+        &:active{
+            fill: #fff;
+        }
+       }
    }
+    &-input{
+      width: 0;
+      min-height: 0;
+      position: absolute;
+      outline: none;
+      box-sizing: border-box;
+      top: 45px;
+      left: -130px;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+    &:focus {
+      width: 200px;
+      min-height: 20px;
+      transition: width 1s ease-out;
+      border: 1px solid #fff;
+   }
+}   
 }
 .header-content-wrp {
     display: flex;
@@ -521,7 +539,6 @@ $width-site: 1920px;
                 &:active {
                     background-color: #fff;
                     color: #8c8c8c;
-                    border: none;
                 }
             }       
         }
@@ -992,7 +1009,30 @@ $width-site: 1920px;
         &:active{
             filter: brightness(100%);
         }
+    } 
+}
+.footer{
+    max-width: $width-site;
+    background-color: #191919;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 80px 0;
+    &-top{
+        min-height: 508px;
+        display: flex;
+        justify-content: center;
+
     }
-    
-    
+    &-bottom{
+
+    }
+}
+.footer-top-item{
+    width: 270px;
+    min-height: 260px;
+    border: 2px solid #fff;
+    margin: 0 35px 0 0;
+    &:last-child{
+        margin: 0;
+    }
 }
