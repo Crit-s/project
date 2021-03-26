@@ -22,6 +22,10 @@
     font-family: 'Montserrat - Ultra Light';
     src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");
 }
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
 
 $width-site: 1920px;
 
@@ -808,5 +812,161 @@ $width-site: 1920px;
             background-color: #fff;
             margin: 0 auto;
         }
+    }
+}
+.recent-posts{
+    padding: 80px 0;
+    &-heading{
+        color: #555555;
+        font-family: 'Raleway - Semi Bold';
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    &-txt{
+        width: 757px;
+        color: #8c8c8c;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+    &-block{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    &-pagination{
+        display: flex;
+        justify-content: center;
+        &-link{
+            fill:  #d1d1d1;
+            text-align: center;
+            &:hover{
+                fill: #c7b299;;
+            }
+            &:active{
+                fill:  #d1d1d1;
+            }
+            &:first-child{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+.recent-posts-block-item{
+    width: 370px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 30px;
+    &:nth-child(1){
+        margin: 0;
+    }
+    &-img{
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+    }
+    &-wrp{
+        box-sizing: border-box;
+        padding: 30px;
+        &-title{
+            color: #555555;
+            font-family: 'Raleway';
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left;
+            margin: 0 0 19px 0;
+        }
+        &-txt{
+            color: #8c8c8c;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: left; 
+            margin: 0 0 27px 0;         
+        }
+        &-link{
+            text-decoration: none;
+            color: #c7b299;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            position: relative;
+            &:hover{
+                color: #8c8c8c; 
+            }
+            &:active{
+                color: #c7b299;
+            }
+            &::after{
+                content:"\25b6";
+                position: absolute;
+                top: -2px;
+                left: 80px;
+                
+            }
+        }
+    }
+    &-date{
+        position: absolute;
+        width: 50px;
+        height: 60px;
+        box-sizing: border-box;
+        top: 20px;
+        left: 20px;
+        &-day{
+            height: 35px;
+            display: block;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: center;
+            padding: 9px 10px;
+            box-sizing: border-box;
+            background-color: #323232;
+            border-radius: 3px 3px 0 0;
+        }
+        &-month{
+            height: 25px;
+            display: block;
+            color: #ffffff;
+            font-family: 'Roboto';
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #252525;
+            border-radius: 0 0 3px 3px;
+        }
+    }
+    &:hover &-img{
+        filter: brightness(40%);
+    }
+    &:hover &-wrp{
+        background-color: #362f2d;
+
+    }
+    &:hover &-wrp-title{
+        color: #c7b299;
+    }
+    &:hover &-wrp-txt{
+        color: #fff;
+    }
+
+    &:hover &-date-day{
+        background-color: #c7b299;
+    }
+    &:hover &-date-month{
+       background-color: #a48d72;
     }
 }
