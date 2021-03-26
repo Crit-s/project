@@ -771,12 +771,16 @@ $width-site: 1920px;
     box-sizing: border-box;
     background-color:#f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
-    padding: 69px 496px 60px 504px;
+    padding: 69px 0 60px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     &-item{
         width: 132px;
         box-sizing: border-box;
+        margin-right: 75px;
+        &:last-child{
+            margin: 0;
+        }
         &-icon{
             display: block;
             fill: #c7b299;
@@ -969,4 +973,26 @@ $width-site: 1920px;
     &:hover &-date-month{
        background-color: #a48d72;
     }
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 489px;
+    background-image: url(../img/background-icon.jpg);
+    &-item{
+        margin-right: 90px;
+        &:last-child{
+            margin: 0;
+            
+        }
+        &:hover{
+            filter: brightness(50%);
+        }
+        &:active{
+            filter: brightness(100%);
+        }
+    }
+    
+    
 }

@@ -764,13 +764,17 @@
   box-sizing: border-box;
   background-color: #f4f5f8;
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
-  padding: 69px 496px 60px 504px;
+  padding: 69px 0 60px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .statistics-item {
   width: 132px;
   box-sizing: border-box;
+  margin-right: 75px;
+}
+.statistics-item:last-child {
+  margin: 0;
 }
 .statistics-item-icon {
   display: block;
@@ -961,6 +965,26 @@
 }
 .recent-posts-block-item:hover .recent-posts-block-item-date-month {
   background-color: #a48d72;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 489px;
+  background-image: url(../img/background-icon.jpg);
+}
+.logo-item {
+  margin-right: 90px;
+}
+.logo-item:last-child {
+  margin: 0;
+}
+.logo-item:hover {
+  filter: brightness(50%);
+}
+.logo-item:active {
+  filter: brightness(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
