@@ -45,7 +45,6 @@
   align-items: center;
   text-decoration: none;
   color: #fff;
-  margin: 0 220px 0 0;
 }
 .header-logo-svg {
   fill: currentColor;
@@ -66,6 +65,7 @@
 
 .nav {
   display: flex;
+  margin: 0 0 0 220px;
 }
 .nav-wrp-link {
   font-size: 14px;
@@ -986,6 +986,7 @@
 }
 
 .logo {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1007,25 +1008,180 @@
 
 .footer {
   max-width: 1920px;
-  background-color: #191919;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 80px 0;
 }
 .footer-top {
+  background-color: #191919;
   min-height: 508px;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 80px 0;
 }
 
 .footer-top-item {
   width: 270px;
   min-height: 260px;
-  border: 2px solid #fff;
   margin: 0 35px 0 0;
+  box-sizing: border-box;
+}
+.footer-top-item-title {
+  display: block;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin: 28px 0 30px 0;
+}
+.footer-top-item-txt {
+  color: #555555;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  margin: 29px 0 33px 0;
+}
+.footer-top-item-link {
+  color: #d1d1d1;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  position: relative;
+  text-decoration: none;
+}
+.footer-top-item-link:hover {
+  color: #c7b299;
+}
+.footer-top-item-link:active {
+  color: #fff;
+}
+.footer-top-item-link::after {
+  content: "\25b6";
+  position: absolute;
+  top: -2px;
+  left: 80px;
+}
+.footer-top-item-link-box2 {
+  display: block;
+  width: 250px;
+  text-decoration: none;
+  color: #555555;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  padding: 0 0 21px 0;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #363636;
+  word-break: break-all;
+}
+.footer-top-item-link-box2:last-child {
+  margin: 0;
+}
+.footer-top-item-link-box2:hover .footer-top-item-link-box2-time {
+  color: #fff;
+}
+.footer-top-item-link-box2:hover {
+  color: #c7b299;
+}
+.footer-top-item-link-box2-time {
+  display: block;
+  margin: 0 0 10px 0;
+  color: #363636;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+.footer-top-item-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-top-item-img-bcg {
+  width: 125px;
+  height: 98px;
+  background-size: cover;
+  margin: 0 10px 10px 0;
+}
+.footer-top-item-img-bcg:nth-child(1) {
+  background-image: url(../img/bottom_img-01.jpg);
+}
+.footer-top-item-img-bcg:nth-child(2) {
+  background-image: url(../img/bottom_img-02.jpg);
+}
+.footer-top-item-img-bcg:nth-child(3) {
+  background-image: url(../img/bottom_img-03.jpg);
+  margin-bottom: 0;
+}
+.footer-top-item-img-bcg:nth-child(4) {
+  background-image: url(../img/bottom_img-04.jpg);
+  margin: 0;
 }
 .footer-top-item:last-child {
   margin: 0;
+}
+
+.footer-bottom {
+  min-height: 111px;
+  box-sizing: border-box;
+  padding: 45px 0 52px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+}
+.footer-bottom-info {
+  margin: 0 449px 0 0;
+}
+.footer-bottom-info-item {
+  color: #555;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+}
+.footer-bottom-info-item::after {
+  content: "\007C";
+  padding: 0 10px 0 10px;
+}
+.footer-bottom-info-item:last-child::after {
+  content: "";
+}
+.footer-bottom-info-item:hover {
+  color: #c7b299;
+}
+.footer-bottom-info-item:active {
+  color: #555;
+}
+.footer-bottom-link-item {
+  color: #555;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: right;
+  text-decoration: none;
+}
+.footer-bottom-link-item::after {
+  content: "\007C";
+  padding: 0 10px 0 10px;
+}
+.footer-bottom-link-item:last-child::after {
+  content: "";
+}
+.footer-bottom-link-item:hover {
+  color: #c7b299;
+}
+.footer-bottom-link-item:active {
+  color: #555;
 }
 
 /*# sourceMappingURL=style.css.map */
